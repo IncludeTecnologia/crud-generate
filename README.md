@@ -1,9 +1,9 @@
 # Laravel 5 CRUD Generator
 
-[![Total Downloads](https://poser.pugx.org/appzcoder/crud-generator/d/total.svg)](https://packagist.org/packages/appzcoder/crud-generator)
-[![Latest Stable Version](https://poser.pugx.org/appzcoder/crud-generator/v/stable.svg)](https://packagist.org/packages/appzcoder/crud-generator)
-[![Latest Unstable Version](https://poser.pugx.org/appzcoder/crud-generator/v/unstable.svg)](https://packagist.org/packages/appzcoder/crud-generator)
-[![License](https://poser.pugx.org/appzcoder/crud-generator/license.svg)](https://packagist.org/packages/appzcoder/crud-generator)
+[![Total Downloads](https://poser.pugx.org/IncludeTecnologia/crud-generator/d/total.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
+[![Latest Stable Version](https://poser.pugx.org/IncludeTecnologia/crud-generator/v/stable.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
+[![Latest Unstable Version](https://poser.pugx.org/IncludeTecnologia/crud-generator/v/unstable.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
+[![License](https://poser.pugx.org/IncludeTecnologia/crud-generator/license.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
 
 ### Requirements
     Laravel >=5.1
@@ -13,7 +13,7 @@
 
 1. Run
     ```
-    composer require appzcoder/crud-generator
+    composer require IncludeTecnologia/crud-generator
     ```
 
 2. Add the service provider to **config/app.php**.
@@ -21,7 +21,7 @@
     'providers' => [
         ...
 
-        Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
+        IncludeTecnologia\CrudGenerator\CrudGeneratorServiceProvider::class,
     ],
     ```
 3. Install **laravelcollective/html** helper package.
@@ -50,7 +50,7 @@
 
 5. Publish vendor files of this package.
     ```
-    php artisan vendor:publish --provider="Appzcoder\CrudGenerator\CrudGeneratorServiceProvider"
+    php artisan vendor:publish --provider="IncludeTecnologia\CrudGenerator\CrudGeneratorServiceProvider"
     ```
 
 Note: You should have configured database for this operation.
@@ -174,7 +174,7 @@ You can customize the generator's stub files/templates to achieve your need.
 
 1. Make sure you've published package's assets.
     ```
-    php artisan vendor:publish --provider="Appzcoder\CrudGenerator\CrudGeneratorServiceProvider"
+    php artisan vendor:publish --provider="IncludeTecnologia\CrudGenerator\CrudGeneratorServiceProvider"
     ```
 
 2. Turn on custom_template support on **config/crudgenerator.php**
@@ -183,7 +183,7 @@ You can customize the generator's stub files/templates to achieve your need.
     ```
 3. From the directory **resources/crud-generator/** you can modify or customize the stub files.
 
-#### If you're still looking for easier one then try this [Admin Panel](https://github.com/appzcoder/laravel-admin)
+#### If you're still looking for easier one then try this [Admin Panel](https://github.com/IncludeTecnologia/laravel-admin)
 
 ## Author
 

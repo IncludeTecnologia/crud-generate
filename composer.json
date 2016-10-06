@@ -1,5 +1,5 @@
 {
-    "name": "appzcoder/crud-generator",
+    "name": "includetecnologia/crud-generator",
     "license": "MIT",
     "description": "Laravel 5 CRUD Generator",
     "keywords": [
@@ -10,9 +10,9 @@
     ],
     "authors": [
         {
-            "name": "Sohel Amin",
-            "email": "sohelamincse@gmail.com",
-            "homepage": "http://www.appzcoder.com"
+            "name": "Include Tecnologia",
+            "email": "contato@includetecnologia.com.br",
+            "homepage": "http://www.includetecnologia.com.br"
         }
     ],
     "require": {
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Appzcoder\\CrudGenerator\\": "src/"
+            "IncludeTecnologia\\CrudGenerator\\": "src/"
         }
     }
 }
