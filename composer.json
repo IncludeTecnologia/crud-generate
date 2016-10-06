@@ -2,6 +2,7 @@
     "name": "includetecnologia/crud-generator",
     "license": "MIT",
     "description": "Laravel 5 CRUD Generator",
+    "minimum-stability": "dev",
     "keywords": [
         "laravel",
         "crud",
@@ -25,5 +26,6 @@
         "psr-4": {
             "IncludeTecnologia\\CrudGenerator\\": "src/"
         }
-    }
+    },
+    "version": "1.0.1"
 }
