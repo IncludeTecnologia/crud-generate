@@ -11,6 +11,18 @@ use Session;
 
 class DummyClass extends Controller
 {
+    private $service{{crudName}};
+    /**
+     * DummyClass constructor.
+     */
+    public function __construct(Service{{crudName}} $service{{crudName}})
+    {
+        $this->service{{crudName}} = $service{{crudName}};
+    }
+     public function getService{{crudName}}()
+    {
+        return $this->service{{crudName}};
+    }
     /**
      * Display a listing of the resource.
      *
@@ -18,7 +30,7 @@ class DummyClass extends Controller
      */
     public function index()
     {
-        ${{crudName}} = {{modelName}}::paginate({{pagination}});
+        ${{crudName}} = $this->getService{{crudName}}->all({{pagination}});
 
         return view('{{viewPath}}{{viewName}}.index', compact('{{crudName}}'));
     }
@@ -45,7 +57,7 @@ class DummyClass extends Controller
         {{validationRules}}
         $requestData = $request->all();
         {{fileSnippet}}
-        {{modelName}}::create($requestData);
+        $this->getService{{crudName}}->create($requestData);
 
         Session::flash('flash_message', '{{modelName}} added!');
 
@@ -61,7 +73,7 @@ class DummyClass extends Controller
      */
     public function show($id)
     {
-        ${{crudNameSingular}} = {{modelName}}::findOrFail($id);
+        ${{crudNameSingular}} = $this->getService{{crudName}}->find($id);
 
         return view('{{viewPath}}{{viewName}}.show', compact('{{crudNameSingular}}'));
     }
@@ -75,7 +87,7 @@ class DummyClass extends Controller
      */
     public function edit($id)
     {
-        ${{crudNameSingular}} = {{modelName}}::findOrFail($id);
+        ${{crudNameSingular}} = $this->getService{{crudName}}->find($id);
 
         return view('{{viewPath}}{{viewName}}.edit', compact('{{crudNameSingular}}'));
     }
@@ -93,8 +105,7 @@ class DummyClass extends Controller
         {{validationRules}}
         $requestData = $request->all();
         {{fileSnippet}}
-        ${{crudNameSingular}} = {{modelName}}::findOrFail($id);
-        ${{crudNameSingular}}->update($requestData);
+        ${{crudNameSingular}} = $this->getService{{crudName}}->update($id, $requestData);
 
         Session::flash('flash_message', '{{modelName}} updated!');
 
@@ -110,7 +121,7 @@ class DummyClass extends Controller
      */
     public function destroy($id)
     {
-        {{modelName}}::destroy($id);
+        $this->getService{{crudName}}->destroy($id);
 
         Session::flash('flash_message', '{{modelName}} deleted!');
 

@@ -1,10 +1,8 @@
 # Laravel 5 CRUD Generator
-
-[![Total Downloads](https://poser.pugx.org/IncludeTecnologia/crud-generator/d/total.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
-[![Latest Stable Version](https://poser.pugx.org/IncludeTecnologia/crud-generator/v/stable.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
-[![Latest Unstable Version](https://poser.pugx.org/IncludeTecnologia/crud-generator/v/unstable.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
-[![License](https://poser.pugx.org/IncludeTecnologia/crud-generator/license.svg)](https://packagist.org/packages/IncludeTecnologia/crud-generator)
-
+[![Latest Stable Version](https://poser.pugx.org/includetecnologia/crud-generator/v/stable)](https://packagist.org/packages/includetecnologia/crud-generator)
+[![Total Downloads](https://poser.pugx.org/includetecnologia/crud-generator/downloads)](https://packagist.org/packages/includetecnologia/crud-generator)
+[![Latest Unstable Version](https://poser.pugx.org/includetecnologia/crud-generator/v/unstable)](https://packagist.org/packages/includetecnologia/crud-generator)
+[![License](https://poser.pugx.org/includetecnologia/crud-generator/license)](https://packagist.org/packages/includetecnologia/crud-generator)
 ### Requirements
     Laravel >=5.1
     PHP >= 5.5.9
@@ -183,8 +181,6 @@ You can customize the generator's stub files/templates to achieve your need.
     ```
 3. From the directory **resources/crud-generator/** you can modify or customize the stub files.
 
-#### If you're still looking for easier one then try this [Admin Panel](https://github.com/IncludeTecnologia/laravel-admin)
-
 ## Author
 
-[Sohel Amin](http://www.sohelamin.com)
+[IncludeTecnologia](http://www.includeecnologia.com.br)
